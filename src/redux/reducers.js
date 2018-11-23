@@ -13,4 +13,4 @@ export const initialState = {
   currentUser: currentUser.initialState
 }
 
-export default rootReducer;
+//export default rootReducer;

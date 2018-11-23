@@ -5,7 +5,6 @@ import { fetchNewTime } from '../../redux/action';
 class Home extends React.Component {
 
   render() {
-    console.log(this.props);
     const { count, fetchNewTime } = this.props;
     return (
       <div>Home
