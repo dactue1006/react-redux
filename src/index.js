@@ -3,9 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css'; 
+import 'mdbreact/dist/css/mdb.css';
 import { Provider } from 'react-redux';
-import { configureStore } from './redux/configureStore';
-const store = configureStore();
+import { createStore } from 'redux';
+import { rootReducer } from './redux/reducers/rootReducer';
+
+const store = createStore(rootReducer);
+
 ReactDOM.render(
   <Provider store={store}>
     <App />

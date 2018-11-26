@@ -4,9 +4,7 @@ import {
   Route,
   Switch
 } from 'react-router-dom';
-import Home from './views/home';
-import About from './views/about';
-import Test from './views/test';
+import Test from './views';
 
 
 class App extends Component {
@@ -14,9 +12,7 @@ class App extends Component {
     return (
       <Router>
         <Switch>
-          <Route path='/about' component={About} />
-          <Route path='/test' component={Test} />
-          <Route path='*' component={Home} />
+          <Route path='/' component={Test}/>
         </Switch>
       </Router>
     );
